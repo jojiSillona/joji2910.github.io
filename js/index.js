@@ -1,6 +1,6 @@
 var i = 0;
 
-var skills = ["Photographer", "Programmer", "Musician", "Audio Engineer", "Video Editor", "GraPHiCS DeSIgnER"];
+var skills = ["Photography", "Programming", "Music", "Audio Engineering", "Video Editing", "GraPHiCS DeSIgn"];
 var skill = skills[Math.floor(Math.random()*skills.length)];
 var speed = 120;
 

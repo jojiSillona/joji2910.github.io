@@ -4,11 +4,14 @@ body{
 }
 
 nav{
+    position: fixed; 
+    overflow: hidden;  
+    
     display: flex;
 
     background-color: #1a1a1a;
     
-    padding-inline-start: 146px;
+    padding-inline-start: 162px;
 
     align-items: center;
 
@@ -38,9 +41,22 @@ nav{
     font-weight: 700;    
 }
 
+#buttons{
+    display: flex;
+    margin-left: 127px;
+}
+
 .button{
     color: #fff;
     font-size: 20px;
+    width: 143px;
+
+    padding-right: 20px;
+}
+
+main{
+    position: relative;
+    top: 64px;
 }
 
 #disclaimer{
@@ -53,7 +69,7 @@ nav{
 
 #landing-page{
     background-image: url("../images/background.jpg");
-    background-size: 100% 758px;
+    background-size: calc(100% * 1.5) auto;
 
     width: 100%;
     height: 758px;
@@ -63,7 +79,7 @@ nav{
     position: absolute;
 
     left: 10%;
-    top: calc(50% - 54px);
+    top: 313px;
 }
 
 .i-am-a{
@@ -85,13 +101,13 @@ nav{
 }
 
 #about-me{
-    padding: 10px;
+    padding: 50px;
 
     background-color:#1a1a1a;
     color: #fff;
 }
 
-.title-page{
+.title{
     font-size: 48px;
     text-align: center;
 }
@@ -100,17 +116,18 @@ nav{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #circle-eugene{
     background-image: url("../images/wacky-eugene.jpg");
     background-size: auto 320px;
-    background-position: -10px 0 0 0 ;
+    background-position: 0 0 0 0 ;
 
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 
-    border-radius: 100%;
+    border-radius: 100px;
 }
 
 .description{
@@ -118,3 +135,22 @@ nav{
     text-align: justify;
 }
 
+#programming-exp{
+    padding: 50px;
+}
+
+#programming-exp-body{
+    text-align: center;
+}
+
+#programming-langs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px
+}
+
+.prog-logo{
+    height: 150px
+}
