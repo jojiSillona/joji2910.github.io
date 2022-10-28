@@ -75,6 +75,10 @@ main{
     height: 758px;
 }
 
+#movable-skill{
+    display: flex;
+}
+
 #skills{
     position: absolute;
 
@@ -86,10 +90,17 @@ main{
     font-size: 24px;
 }
 
-#main-skill{
+#main-skill, #cursor{
     font-size: 5vw;
     line-height: 80px;
 }
+
+.blink{
+    animation: blink .7s infinite;
+}
+@keyframes blink{
+    to {opacity: .0;}
+}    
 
 #eugene-png{
     position: absolute;

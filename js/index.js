@@ -1,21 +1,41 @@
-var i = 0;
+const skills = ["Programming", "Music", "Audio Engineering", "Photography",  "Video Editing", "GraPHiCS DeSIgn"];
+let i = 0;
+let timer;
 
-var skills = ["Photography", "Programming", "Music", "Audio Engineering", "Video Editing", "GraPHiCS DeSIgn"];
-var skill = skills[Math.floor(Math.random()*skills.length)];
-var speed = 120;
-
-function typeWrite(){
-    if(i < skill.length){
-        document.getElementById("main-skill").innerHTML += skill.charAt(i);
-        i++;
-        setTimeout(typeWrite, speed);
-    }
-}
-
-function cursor(){
-    
-}
-
-window.onload = function(){
-    typeWrite();
+function typeSkill(){
+    let skill = skills[i].split("");
+    var loopType = function() {
+        if(skill.length > 0){
+            document.getElementById("main-skill").innerHTML += skill.shift();
+        } else {
+            setTimeout(eraseSkill, 2000);
+            return false;
+        };
+        timer = setTimeout(loopType, 150);
+    };
+    loopType();
 };
+
+function eraseSkill(){
+    let skill = skills[i].split("");
+    var loopErase = function() {
+        if(skill.length > 0){
+            skill.pop();
+            document.getElementById("main-skill").innerHTML = skill.join("");
+        } else {
+            if(skills.length > (i + 1)) {
+                i++;
+            } else {
+                i = 0;
+            };
+            setTimeout(typeSkill, 500);
+            return false;
+        };
+        timer = setTimeout(loopErase, 100);
+    };
+    loopErase();
+}
+
+window.onload = function() {
+    typeSkill();
+}
