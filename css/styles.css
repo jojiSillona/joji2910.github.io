@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0px !important;
     overflow-x: hidden;
@@ -46,7 +50,9 @@ nav{
     margin-left: 127px;
 }
 
-.button{
+.button, a{
+    text-decoration: none;
+
     color: #fff;
     font-size: 20px;
     width: 143px;
@@ -133,7 +139,7 @@ main{
 #circle-eugene{
     background-image: url("../images/wacky-eugene.jpg");
     background-size: auto 320px;
-    background-position: 0 0 0 0 ;
+    background-position: -50px -90px;
 
     width: 200px;
     height: 200px;
@@ -142,6 +148,8 @@ main{
 }
 
 .description{
+    padding-left: 30px;
+
     width: 50%;
     text-align: justify;
 }
@@ -158,10 +166,27 @@ main{
     display: flex;
     justify-content: center;
 
-    padding: 20px
+    padding: 50px
 }
 
 .prog-logo{
-    height: 150px;
-    padding-left: 25px;
+    height: 120px;
+    width: 120;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#music{
+    background-color: #1a1a1a;
+    color: #fff;
+
+    padding: 50px;
+}
+
+#music-body{
+    text-align: center;
+}
+
+.album-art{
+    height: 300px;
 }
