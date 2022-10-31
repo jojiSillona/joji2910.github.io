@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="/css/styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script src="/js/index.js"></script>
         <title>eugeneSillona()</title>
     </head>
     <body>
+        <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
         <nav>
             <div id="logo" class="main-font">
                 <span class="main-font bold-font">eugeneSillona</span>()
@@ -72,23 +74,24 @@
                     I have worked with the following songs:
                 </div>
                 <div class="worked-music">
-                    <input type="image" id="show" name="we could be" class="album-art" src="https://i.scdn.co/image/ab67616d0000b2733b09d9f155b42a33202bcb17" alt="just a fad - we could be">
-                    <input type="image" name="panaginip" class="album-art" src="https://i.scdn.co/image/ab67616d0000b273046b220927963ded98c31f31" alt="sinai - panaginip">
-                    <input type="image" name="chica" class="album-art" src="https://cdns-images.dzcdn.net/images/cover/e895d0d89243b1fe892b13391199910d/500x500.jpg" alt="akio elijah - chica">
-                    <input type="image" name="babae nanaman" class="album-art" src="https://i.scdn.co/image/ab67616d0000b273b6ada40df7d433f45b27b199" alt="just a fad - babae nanaman">
+                    <input type="image" name="we could be" class="album-art" src="https://i.scdn.co/image/ab67616d0000b2733b09d9f155b42a33202bcb17" alt="just a fad - we could be" onclick="showMusicDetails(this)">
+                    <input type="image" name="panaginip" class="album-art" src="https://i.scdn.co/image/ab67616d0000b273046b220927963ded98c31f31" alt="sinai - panaginip" onclick="showMusicDetails(this)">
+                    <input type="image" name="chica" class="album-art" src="https://cdns-images.dzcdn.net/images/cover/e895d0d89243b1fe892b13391199910d/500x500.jpg" alt="akio elijah - chica" onclick="showMusicDetails(this)">
+                    <input type="image" name="babae nanaman" class="album-art" src="https://i.scdn.co/image/ab67616d0000b273b6ada40df7d433f45b27b199" alt="just a fad - babae nanaman" onclick="showMusicDetails(this)">
                 </div>
                 <div class="worked-music">
-                    <input type="image" id="show" name="gloom" class="album-art" src="https://i.scdn.co/image/ab67616d0000b27307f8650aa655fbe6afcd7b89" alt="akio elijah - gloom">
-                    <input type="image" name="mhp" class="album-art" src="https://i.scdn.co/image/ab67616d0000b2737a118d9e5163d2fc95e84df2" alt="sinai - mhp">
+                    <input type="image" name="gloom" class="album-art" src="https://i.scdn.co/image/ab67616d0000b27307f8650aa655fbe6afcd7b89" alt="akio elijah - gloom" onclick="showMusicDetails(this)">
+                    <input type="image" name="mhp" class="album-art" src="https://i.scdn.co/image/ab67616d0000b2737a118d9e5163d2fc95e84df2" alt="sinai - mhp" onclick="showMusicDetails(this)">
+                </div>
+                <div id="music-details">
+                    <div class="title main-font bold-font">"Title of song"</div>
+                    <span class="main-font" style="font-size: 24px;">by "ARTIST NAME"</span>
+                    <div id="music-detail-body" class="main-font">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4ci4yeWlhPhOvYzXRM9tPP?utm_source=generator" width="350" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <div id="detail-description">Some details about the song.</div>
+                    </div>
                 </div>
             </div>
-            <!-- <div id="music-details">
-                <div class="title main-font bold-font">"Title of song"</div>
-                <span class="main-font" style="font-size: 24px;">by "ARTIST NAME"</span>
-                <div id="music-detail-body" class="main-font">
-                    Some details about the song.
-                </div>
-            </div> -->
         </main>
     </body>
 </html>

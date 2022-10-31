@@ -180,7 +180,7 @@ main{
     background-color: #1a1a1a;
     color: #fff;
 
-    padding: 50px;
+    padding: 50px 15% 50px 15%;
 }
 
 #music-body{
@@ -202,6 +202,26 @@ main{
 }
 
 #music-details{
+    margin-top: 30px;
+    padding: 50px;
+
+    text-align: center;
+
     background-color: #353535;
-    color: #fff
+    color: #fff;
+
 }
+
+#music-detail-body{
+    text-align: center;
+    display: flex;
+
+    margin-top: 30px;
+}
+
+#detail-description{
+    padding-left: 30px;
+
+    text-align: justify;
+}
+
