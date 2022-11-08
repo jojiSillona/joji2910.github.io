@@ -158,7 +158,7 @@ main{
     padding: 50px;
 }
 
-#programming-exp-body{
+#programming-exp-body, #projects-body{
     text-align: center;
 }
 
@@ -174,6 +174,27 @@ main{
     width: 120;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.project-container{
+    margin: 50px auto 0 auto;
+    width: 400px;
+    border-radius: 20px;
+
+
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img{
+    width: 300px;
+    
+    margin: 30px 50px 30px 50px;
+}
+
+.project-container-body{
+    margin: 10px 10px 30px 10px;
 }
 
 #music{
