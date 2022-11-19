@@ -76,7 +76,9 @@ function showMusicDetails(music){
             nodes[1].innerHTML = "by \"Akio Elijah\""
             preview[0].setAttribute("src", "https://open.spotify.com/embed/track/1BPv3arYQCUtzF0YyFSF25?utm_source=generator")
             preview[1].innerHTML = 
-            `"Chica" is a project by Akio Elijah. He asked me if I could mix his song. I said yeah. Ok Cool.`
+            `"Chica" is a project by Akio Elijah. I was asked by him if I could mix and master his own song.
+            Unlike my other songs, this song is more on a 'swing' vibe which was new to me as I was used to
+            working with Indie Rock.`
             break
         case "babae nanaman":
             nodes = musicDetail.children
@@ -84,7 +86,12 @@ function showMusicDetails(music){
             nodes[1].innerHTML = "by \"Just A Fad\""
             preview[0].setAttribute("src", "https://open.spotify.com/embed/track/0SxZxPTejXfd5vBL5P71Jr?utm_source=generator")
             preview[1].innerHTML = 
-            `"Babae Nanaman" is a 4-track EP by Just A Fad.`
+            `"Babae Nanaman" is a 4-track EP by Just A Fad. It was also my first time working with a full-fledged
+            EP. Aside from mixing and mastering the song, this song also needed sound design to make some of the 
+            songs a bit more 'full'. Initially consisting of 5 tracks, the EP included of "Babae Nanaman" an 
+            intro-intermission which was removed from the release, "I Really Love Swimming in the Beach" which 
+            is supposed to sound like the Beach Boys, "Cerveza", a chill song, "Ilaw", that includes my sound design, 
+            and "The Lane" which features a distored vocal at the end.`
             break
 
         case "gloom":
@@ -93,7 +100,9 @@ function showMusicDetails(music){
             nodes[1].innerHTML = "by \"Akio Elijah\""
             preview[0].setAttribute("src", "https://open.spotify.com/embed/track/4HY7r8dLgtVkD3upRdRwOk?utm_source=generator")
             preview[1].innerHTML = 
-            `Another swag beat from Akio Elijah called "Gloom" Swag BOOM BOOM BOOM`
+            `"Gloom" was another request from Akio Elijah for me to mix and master. Similar to his last single,
+            it was way off my genre as it is more of like a 'street' beat to me. Regardless, it was fun to mix
+            his song`
             break
         case "mhp":
             nodes = musicDetail.children
