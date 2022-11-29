@@ -15,7 +15,7 @@ nav{
 
     background-color: #1a1a1a;
     
-    padding-inline-start: 162px;
+    padding-inline-start: 120px;
 
     align-items: center;
 
@@ -43,7 +43,7 @@ nav{
 
 #buttons{
     display: flex;
-    margin-left: 127px;
+    margin-left: 120px;
 }
 
 .button, a{
@@ -51,9 +51,10 @@ nav{
 
     color: #fff;
     font-size: 20px;
-    width: 143px;
+    width: auto;
+    text-align: center;
 
-    padding-right: 20px;
+    padding: 10px;
 }
 
 main{
@@ -172,8 +173,14 @@ main{
     padding-right: 30px;
 }
 
+#projects{
+    display: flex;
+    justify-content: center;
+}
+
 .project-container{
-    margin: 50px auto 0 auto;
+    margin: 50px 10px 0 10px;
+    
     width: 400px;
     border-radius: 20px;
 
@@ -181,12 +188,14 @@ main{
     box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
+
+    object-fit: cover;
 }
 
 .project-img{
     width: 300px;
     
-    margin: 30px 50px 30px 50px;
+    margin: 30px 50px 5px 50px;
 }
 
 .project-container-body{
@@ -197,7 +206,9 @@ main{
     background-color: #1a1a1a;
     color: #fff;
 
-    padding: 50px 15% 50px 15%;
+    width: 100vw;
+
+    padding: 50px 0px 50px 0px;
 }
 
 #music-body{
@@ -206,9 +217,10 @@ main{
 
 .worked-music{
     display: flex;
-    justify-content: center;
 
-    padding:50px 50px 0 50px;
+    padding: 50px 50px 0 50px;
+
+    overflow-x: scroll;
 }
 
 .album-art{
@@ -219,7 +231,6 @@ main{
 }
 
 #music-details{
-    margin-top: 30px;
     padding: 50px;
 
     text-align: center;
@@ -242,3 +253,59 @@ main{
     text-align: justify;
 }
 
+#photography{
+    text-align: center;
+
+    padding: 50px;
+}
+
+#photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gallery{
+    margin-top: 50px;
+    width: 450px;
+}
+
+.gallery-vert{
+    width: 140px;
+    height: 191.2px;
+    margin-bottom: 2px;
+    object-fit: cover;
+}
+
+.gallery-hori{
+    width: 437px;
+    height: 189px;
+    margin-bottom: 2px;
+    object-fit: cover;
+}
+
+#contacts{
+    background-color: #1a1a1a;
+    color: #fff;
+
+    justify-content: center;
+    text-align: center;
+
+    padding: 50px;
+}
+
+.contact-logo{
+    width: 50px;
+}
+
+@media (min-width: 768px) {
+    .modal-xl {
+        width: 90%;
+        max-width:1200px;
+    }
+}
+
+.modal-body {
+    padding:9px 15px;
+    background-color: #353535;
+ }
